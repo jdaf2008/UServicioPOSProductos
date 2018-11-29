@@ -1,0 +1,29 @@
+{
+  "name": "uservicioposproductos",
+  "version": "1.0.0",
+  "description": "API RESTFUL para cliente en sistema POS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdaf2008/UServicioPOSProductos.git"
+  },
+  "author": "Juan Arias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdaf2008/UServicioPOSProductos/issues"
+  },
+  "homepage": "https://github.com/jdaf2008/UServicioPOSProductos#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.16.4",
+    "jwt-simple": "^0.5.5",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.14",
+    "nodemon": "^1.18.7"
+  }
+}
