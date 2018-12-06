@@ -5,7 +5,7 @@ var app = require('./app');
 var port = process.env.PORT || 3789;
 
 
-mongoose.connect('mongodb://localhost:27017/POS_product', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost:27017/pos_prod_backend', { useNewUrlParser: true })
     .then(() => {
         console.log('the POS_product Database connection is successfull');
         

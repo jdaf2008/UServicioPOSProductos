@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 // Base Routes
 
-app.use('/api',product_routes);
+app.use('/pos/api',product_routes);
 
 app.get('/testing',(req,res) => {
     res.status(200).send({message: "This is the testing method"});
