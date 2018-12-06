@@ -1,11 +1,13 @@
 'use strict'
 
+require('dotenv').load();
 var mongoose = require('mongoose');
 var app = require('./app');
+var urlBD = process.env.URLBD || "mongodb://localhost:27017/pos_prod_backend"
 var port = process.env.PORT || 3789;
 
 
-mongoose.connect('mongodb://localhost:27017/pos_prod_backend', { useNewUrlParser: true })
+mongoose.connect(urlBD, { useNewUrlParser: true })
     .then(() => {
         console.log('the POS_product Database connection is successfull');
         
