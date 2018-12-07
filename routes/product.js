@@ -11,7 +11,7 @@ var api = express.Router();
 // api.put('/products/:id', mdAuthPublic.ensureAuth, ProductController.updateProduct);
 // api.delete('/products/:id', mdAuthPublic.ensureAuth, ProductController.deleteProduct);
 
-api.get('/products', mdAuthPublic.ensureAuth, ProductController.getProducts);
+api.get('/products', ProductController.getProducts);
 api.post('/products', ProductController.saveProducts);
 api.put('/products/:id', ProductController.updateProduct);
 api.delete('/products/:id', ProductController.deleteProduct);
