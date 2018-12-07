@@ -20,15 +20,25 @@ authorization    :   TOKEN   *temporalmente deshabilitado*
 
 ```javascript
 {
-    "data": {
-        "_id": "5c0aafe18b62b8597f1e2bf7",
-        "name": "luces",
-        "price": "250000",
-        "code": "P003",
-        "description": "Descrición de microservicio",
-        "__v": 0
-    },
-    "message": "Los datos fueron guardados correctamente"
+    "data": [
+        {
+            "_id": "5c0aafe18b62b8597f1e2bf7",
+            "name": "luces",
+            "price": "250000",
+            "code": "P003",
+            "description": "Descrición de microservicio",
+            "__v": 0
+        },
+        {
+            "_id": "5c0ab7cf8b62b8597f1e2bf8",
+            "name": "pedales",
+            "price": "2500",
+            "code": "P004",
+            "description": " pedales bicicleta",
+            "__v": 0
+        }
+    ],
+    "message": "Los datos fueron cargados correctamente"
 }
 ```
 
@@ -63,5 +73,36 @@ Y el body contiene los datos del nuevo producto
         "__v": 0
     },
     "message": "Los datos fueron guardados correctamente"
+}
+```
+
+* PUT
+
+Se encarga de actulizar un item del inventarío debe incluir en la cabecera el token de autorización
+
+authorization    :   TOKEN  *temporalmente deshabilitado*
+
+Y el body contiene los datos del producto identificado con el nombre
+
+
+```javascript
+{
+        "name": "luces",
+        "price": "25000"
+}
+```
+
+* DELETE 
+
+Se encarga de eliminar un item del inventarío debe incluir en la cabecera el token de autorización
+
+authorization    :   TOKEN  *temporalmente deshabilitado*
+
+Y el body contiene los datos del producto identificado con el nombre
+
+```javascript
+{
+        "name": "luces",
+        "price": "25000"
 }
 ```
