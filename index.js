@@ -3,8 +3,8 @@
 require('dotenv').load();
 var mongoose = require('mongoose');
 var app = require('./app');
-var urlBD = process.env.URLBD || "mongodb://localhost:27017/pos_prod_backend"
-var port = process.env.PORT || 3789;
+let urlBD = process.env.URLBD || "mongodb://localhost:27017/pos_prod_backend"
+let port = process.env.PORT || 3789;
 
 
 mongoose.connect(urlBD, { useNewUrlParser: true })
