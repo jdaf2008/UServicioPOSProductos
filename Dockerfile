@@ -7,6 +7,8 @@ WORKDIR /usr/src/app
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
 
+RUN yum install nodejs npm --enablerepo=epel
+
 COPY package*.json ./
 
 RUN npm install
