@@ -18,9 +18,9 @@ function saveProducts(req,res){
        console.log(params);
    
        // Assign value to product
-       if(params.name){
+       if(params.code){
 
-        console.log(params.name)
+        console.log(params.code)
    
            product.name = params.name;
            product.price = params.price;
@@ -28,7 +28,7 @@ function saveProducts(req,res){
            product.description = params.description;
 
    
-           Controller.handleResponse('save', {name:product.name.toLowerCase()}, null, product, null, Product, Config.DATA_SAVE_MSG_ERROR, Config.ERROR_DATA, Config.DATA_SAVE_MSG_OK, (code, payload)=>{
+           Controller.handleResponse('save', {code:product.code}, null, product, null, Product, Config.DATA_SAVE_MSG_ERROR, Config.ERROR_DATA, Config.DATA_SAVE_MSG_OK, (code, payload)=>{
                res.status(code).send(payload);
            });
    
