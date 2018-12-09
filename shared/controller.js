@@ -17,7 +17,7 @@ function basicResponse(err, items, errorMsg, successMsg, cbResponse){
             });
         } else {
             cbResponse(200, {
-                productos: items,
+                items,
                 //message: successMsg
             });
         }
