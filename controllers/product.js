@@ -20,8 +20,6 @@ function saveProducts(req,res){
        // Assign value to product
        if(params.code){
 
-        console.log(params.code)
-   
            product.name = params.name;
            product.price = params.price;
            product.code = params.code;

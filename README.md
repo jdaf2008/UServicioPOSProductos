@@ -20,7 +20,7 @@ authorization    :   TOKEN   *temporalmente deshabilitado*
 
 ```javascript
 {
-    "data": [
+    "items": [
         {
             "_id": "5c0aafe18b62b8597f1e2bf7",
             "name": "luces",
@@ -37,8 +37,7 @@ authorization    :   TOKEN   *temporalmente deshabilitado*
             "description": " pedales bicicleta",
             "__v": 0
         }
-    ],
-    "message": "Los datos fueron cargados correctamente"
+    ]
 }
 ```
 
