@@ -17,8 +17,8 @@ function basicResponse(err, items, errorMsg, successMsg, cbResponse){
             });
         } else {
             cbResponse(200, {
-                data: items,
-                message: successMsg
+                items,
+                //message: successMsg
             });
         }
     }
